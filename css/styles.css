@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(57, 73, 171);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 740px) {
+    nav {
+        height:160px;
+    }
+
+    body {
+        padding-top: 160px;
+    }
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 24px;
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(197, 202, 233);
+    transition: color 0.3s ease-in-out;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+
+.left {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.left>a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    color: white;
+}
+
+.left>a:hover {
+    color: rgb(197, 202, 233);
+}
+
+.right {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.firstSection {
+    background-color: rgb(26, 35, 126);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.leftSection {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#element_color {
+    color: rgb(121, 134, 203);
+}
+
+.rightSection img {
+    width: 400px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.secondSection {
+    background-color: rgb(57, 73, 171);
+    padding: 50px;
+}
+
+.sectionTitle {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.divider-custom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 30rem;
+    height: 0.25rem;
+    background-color: rgb(26, 35, 126);
+    border-radius: 5rem;
+    border-color: rgb(26, 35, 126);
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    color: rgb(26, 35, 126);
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: white;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    color: white;
+}
+
+.secondSectionContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 310px;
+    border-radius: 10px;
+    border: 1px solid rgb(26, 35, 126);
+    background-color: white;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px white;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card h1 {
+    font-size: 1.25rem;
+    color: rgb(26, 35, 126);
+    margin-left: 10px;
+}
+
+.card p {
+    margin: 10px;
+    color: rgb(26, 35, 126);
+}
+
+.thirdSection {
+    background-color: rgb(26, 35, 126);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thirdSectionContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skill-card {
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(26, 35, 126);
+    margin: 20px;
+}
+
+.skill-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px white;
+}
+
+.skill-card h1 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.skill-card ul {
+    margin: 10px;
+}
+
+.skill-card ul li {
+    font-size: 1.25rem;
+    margin: 10px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(57, 73, 171);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: large;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.custom-button i {
+    margin-right: 8px;
+}
+
+.custom-button:hover {
+    color: rgb(57, 73, 171);
+    background-color: white;
+}
+
+.forthSection {
+    background-color: rgb(57, 73, 171);
+    padding: 50px;
+}
+
+.forthSectionContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.forthSectionContent>div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socialConnect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socialConnect>div {
+    padding: 20px;
+}
+
+.socialConnect h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.socialConnect p {
+    margin: 20px;
+    font-size: 1.25rem;
+}
+
+.location {
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+}
+
+.social-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(26, 35, 126);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.social-button:hover {
+    background-color: white;
+    color: rgb(26, 35, 126);
+}
+
+.copyRight {
+    color: white;
+    text-align: center;
+    background-color: rgb(26, 35, 126);
+    padding: 20px;
+}

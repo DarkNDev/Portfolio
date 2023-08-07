@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dushyant - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="left"><a href="./">Introduction</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span id="intro"></span>
+                <div>
+                    <a href="assets/resume.pdf" class="custom-button">
+                        <i class="fas fa-download me-2"></i>
+                        Resume
+                    </a>
+                    <a href="https://github.com/DarkNDev" target="_blank" class="custom-button">
+                        Visit Github
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="assets/bg.png" alt="...">
+            </div>
+        </section>
+
+        <a id="projects" class="anchor"></a>
+        <section class="secondSection">
+            <div class="sectionTitle">
+                <h1>Projects</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="secondSectionContent">
+                <div class="card">
+                    <a href="https://github.com/DarkNDev/EverKeep" target="_blank">
+                        <img src="assets/everkeep_demo.gif" alt="Card Image">
+                        <h1>EverKeep</h1>
+                        <p>Local note taking app with reminders, scribbles, etc. Made using MVVM architecture.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/DarkNDev/EverPics" target="_blank">
+                        <img src="assets/everpics_demo.gif" alt="Card Image">
+                        <h1>EverPics</h1>
+                        <p>Browse, Bookmark and Download High quality images from unsplash-api with infinite scrolling.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/DarkNDev/EverNews" target="_blank">
+                        <img src="assets/evernews_demo.gif" alt="Card Image">
+                        <h1>EverNews</h1>
+                        <p>News updates from news-api. Made using MVVM architecture with offline caching.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/DarkNDev/ChatRoom" target="_blank">
+                        <img src="assets/chat_room_demo.gif" alt="Card Image">
+                        <h1>Ktor Chat Room</h1>
+                        <p>Chat Room using async server and client app with websockets, sessions and
+                            postgresql as database.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/DarkNDev/NetKeep" target="_blank">
+                        <img src="assets/note_api_demo.gif" alt="Card Image">
+                        <h1>Ktor Notes-Api</h1>
+                        <p>Notes-Api using async server and client app with jwt auth and postgres as database.
+                        </p>
+                    </a>
+                </div>
+                <div class="skill-card">
+                    <h1>Other Project Links:</h1>
+                    <ul>
+                        <li>Ktor Chat Room - <a href="https://github.com/DarkNDev/com.darkndev.chat-api"
+                                target="_blank">server link</a></li>
+                        <li>Ktor Notes-Api - <a href="https://github.com/DarkNDev/com.darkndev.notes-api"
+                                target="_blank">server link</a></li>
+                        <li>EverKeep using Jetpack Compose - <a href="https://github.com/DarkNDev/EverKeepCompose"
+                                target="_blank">app link</a></li>
+                        <li>Ktor Authentication - <a href="https://github.com/DarkNDev/com.darkndev.ktor-auth"
+                                target="_blank">server link</a>&ensp;<a href="https://github.com/DarkNDev/KtorAuth"
+                                target="_blank">app link</a></li>
+                        <li>Recycler view selection tracker - <a
+                                href="https://github.com/DarkNDev/SelectionTrackerUsage" target="_blank">app link</a>
+                        </li>
+                        <li>Custom Drawing - <a href="https://github.com/DarkNDev/DrawingUsage" target="_blank">app
+                                link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <a id="skills" class="anchor"></a>
+        <section class="thirdSection">
+            <div class="sectionTitle">
+                <h1>Skills</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="thirdSectionContent">
+                <div class="skill-card">
+                    <h1>Native Android Framework:</h1>
+                    <ul>
+                        <li>Programming Language - Java, Kotlin</li>
+                        <li>Architecture - MVVM (Model-View-ViewModel)</li>
+                        <li>Jetpack Compose</li>
+                        <li>Kotlin - Flows and Coroutines</li>
+                        <li>ViewModel, Lifecycle (Activities, Fragments) and Livedata</li>
+                        <li>Managers (Work, Alarm, Download), Intents, Broadcast Receivers, Content Providers</li>
+                        <li>View and Data binding</li>
+                        <li>Libraries - Room, Glide, Dagger Hilt, Retrofit 2, Ktor-client, Paging 3, Datastore</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h1>Ktor Framework:</h1>
+                    <ul>
+                        <li>Ktor server and client side</li>
+                        <li>JWT Authentication</li>
+                        <li>Hashing</li>
+                        <li>Routing and logging</li>
+                        <li>Content negotiation and serialization</li>
+                        <li>Kotlin - Coroutines and Exposed</li>
+                        <li>Websockets and Sessions</li>
+                        <li>Integration of Ktor with Android Framework</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h1>Other Skills and Interests:</h1>
+                    <ul>
+                        <li>Postgresql</li>
+                        <li>Photoshop</li>
+                        <li>Arduino, Node MCU</li>
+                        <li>Basic HTML and CSS</li>
+                        <li>Tech Enthusiast</li>
+                        <li>Watching News and Reading</li>
+                        <li>Badminton, Swimming, Cricket</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <a id="about" class="anchor"></a>
+        <section class="forthSection">
+            <div class="sectionTitle">
+                <h1>About</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="forthSectionContent">
+                <div>
+                    I am Dushyant Kumar Behera graduated from College of Engineering and Technology, Bhubaneswar in
+                    Electrical Engineering and completed my schooling from Kendriya Vidyalaya No. 1, Bhubaneswar.
+                </div>
+                <div>
+                    Aspiring to be among best in the field using the skills and knowledge attained by me and thereby
+                    adding values to myself and the organisation and have zeal to work and to be part of an enthusiast
+                    work environment, where I can use my technical skills to accomplish organisational goals.
+                </div>
+            </div>
+
+            <div class="socialConnect">
+                <div class="location">
+                    <h1>Location</h1>
+                    <p>Bhubaneswar, Odisha, India</p>
+                </div>
+                <div class="social">
+                    <h1>Around the Web</h1>
+                    <a href="https://github.com/DarkNDev" target="_blank" class="social-button">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dushyantkumarbehera/" target="_blank" class="social-button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="copyRight">
+            <p>Copyright © Dushyant, All Rights Reserved</p>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
