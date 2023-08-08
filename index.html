@@ -4,224 +4,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Dushyant - Portfolio</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="assets/android_icon.svg" type="image/svg+xml">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm bg-light">
-            <div class="left"><a href="./">Introduction</a></div>
-            <div class="right">
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                </svg>
+                <span class="ml-3 text-xl">Portfolio</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="#projects" class="mr-5 hover:text-white">Projects</a>
+                <a href="#skills" class="mr-5 hover:text-white">Skills</a>
+                <a href="#about" class="mr-5 hover:text-white">About</a>
+            </nav>
+            <!-- <button
+                class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button> -->
+        </div>
     </header>
 
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <span id="intro"></span>
-                <div>
-                    <a href="assets/resume.pdf" class="custom-button">
-                        <i class="fas fa-download me-2"></i>
-                        Resume
-                    </a>
-                    <a href="https://github.com/DarkNDev" target="_blank" class="custom-button">
-                        Visit Github
-                    </a>
+    <section class="text-gray-400 bg-gray-900 body-font px-10 py-10">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hello, My name is Dushyant
+                    <br class="hidden lg:inline-block">and I am a passionate
+                    <br class="hidden lg:inline-block">Android Developer
+                </h1>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a
+                            href="assets/resume.pdf" target="_blank">Resume</a></button>
+                    <button
+                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"><a
+                            href="https://github.com/DarkNDev" target="_blank">Visit Github</a></button>
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="assets/bg.png" alt="...">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="/assets/bg.png">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <a id="projects" class="anchor"></a>
-        <section class="secondSection">
-            <div class="sectionTitle">
-                <h1>Projects</h1>
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+    <section class="text-gray-400 bg-gray-900 body-font" id="projects">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Projects</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">These are some of the open source projects made by
+                    me that are available on github.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/everkeep_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">EverKeep</h1>
+                            <p class="leading-relaxed text-justify pb-2">Local note taking app with reminders,
+                                scribbles, etc. Made using clean MVVM architecture.</p>
+                            <p class="leading-relaxed text-justify">Libraries Used: Coroutines, Lifecycle, Dagger hilt,
+                                Data binding, Glide, Room, Datastore, Flexbox, etc.</p>
+                            <a href="https://github.com/DarkNDev/EverKeep"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/everpics_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">EverPics</h1>
+                            <p class="leading-relaxed text-justify pb-2">Browse, bookmark and download high quality
+                                photos from unsplash.</p>
+                            <p class="leading-relaxed text-justify">Libraries Used: Coroutines, Lifecycle, Dagger hilt,
+                                View binding, Glide, Room, Retrofit 2, Paging 3, etc.</p>
+                            <a href="https://github.com/DarkNDev/EverPics"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/evernews_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">EverNews</h1>
+                            <p class="leading-relaxed text-justify pb-2">Browse, bookmark, visit news from different
+                                websites with offline support.</p>
+                            <p class="leading-relaxed text-justify">Libraries Used: Coroutines, Lifecycle, Dagger hilt,
+                                View binding, Glide, Room, Retrofit 2, Paging 3, etc.</p>
+                            <a href="https://github.com/DarkNDev/EverNews"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/chatroom_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                                / KTOR FRAMEWORK
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">ChatRoom</h1>
+                            <p class="leading-relaxed text-justify pb-2">Using asynchronous server (Ktor application)
+                                with websockets, sessions and postgresql as database and client (Android application)
+                                with coroutines, lifecycle, dagger hilt, room, ktor-client, etc.</p>
+                            <a href="https://github.com/DarkNDev/ChatRoom"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Client Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/DarkNDev/com.darkndev.chat-api"
+                                class="mt-3 text-indigo-300 inline-flex items-center pl-4" target="_blank">Server Github
+                                Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/netkeep_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                                / KTOR FRAMEWORK
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">Notes-Api</h1>
+                            <p class="leading-relaxed text-justify pb-2">Using asynchronous server (Ktor application)
+                                with jwt authentication and postgresql as database and client (Android application) with
+                                coroutines, lifecycle, dagger hilt, room, ktor-client, etc.</p>
+                            <a href="https://github.com/DarkNDev/NetKeep"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Client Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/DarkNDev/com.darkndev.notes-api"
+                                class="mt-3 text-indigo-300 inline-flex items-center pl-4" target="_blank">Server Github
+                                Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                            src="assets/everkeep_compose_demo.gif">
+                        <div
+                            class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">ANDROID APP
+                                (JETPACK COMPOSE)
+                            </h2>
+                            <h1 class="title-font text-lg font-medium text-white mb-3">Note App</h1>
+                            <p class="leading-relaxed text-justify pb-2">Local note taking app with room as database. Made using Jetpack Compose.</p>
+                            <p class="leading-relaxed text-justify">Libraries Used: Coroutines, Dagger hilt, Room, Compose Navigation, etc.</p>
+                            <a href="https://github.com/DarkNDev/EverKeepCompose"
+                                class="mt-3 text-indigo-300 inline-flex items-center" target="_blank">Github Link
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="secondSectionContent">
-                <div class="card">
-                    <a href="https://github.com/DarkNDev/EverKeep" target="_blank">
-                        <img src="assets/everkeep_demo.gif" alt="Card Image">
-                        <h1>EverKeep</h1>
-                        <p>Local note taking app with reminders, scribbles, etc. Made using MVVM architecture.
-                        </p>
-                    </a>
+        </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font" id="skills">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Skills and Interests
+                </h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Some of the technical skills acquired by
+                    me.</p>
+            </div>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Programming Languages - Java, Kotlin</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/DarkNDev/EverPics" target="_blank">
-                        <img src="assets/everpics_demo.gif" alt="Card Image">
-                        <h1>EverPics</h1>
-                        <p>Browse, Bookmark and Download High quality images from unsplash-api with infinite scrolling.
-                        </p>
-                    </a>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Native Android Framework, Jetpack Compose</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/DarkNDev/EverNews" target="_blank">
-                        <img src="assets/evernews_demo.gif" alt="Card Image">
-                        <h1>EverNews</h1>
-                        <p>News updates from news-api. Made using MVVM architecture with offline caching.
-                        </p>
-                    </a>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">MVVM (Model-View-ViewModel), Kotlin flows and
+                            coroutines</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/DarkNDev/ChatRoom" target="_blank">
-                        <img src="assets/chat_room_demo.gif" alt="Card Image">
-                        <h1>Ktor Chat Room</h1>
-                        <p>Chat Room using async server and client app with websockets, sessions and
-                            postgresql as database.
-                        </p>
-                    </a>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Lifecycles (Activities, Fragments, ViewModel,
+                            LiveData)</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <a href="https://github.com/DarkNDev/NetKeep" target="_blank">
-                        <img src="assets/note_api_demo.gif" alt="Card Image">
-                        <h1>Ktor Notes-Api</h1>
-                        <p>Notes-Api using async server and client app with jwt auth and postgres as database.
-                        </p>
-                    </a>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Work, Intents, Broadcast Receivers, Content
+                            Providers</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h1>Other Project Links:</h1>
-                    <ul>
-                        <li>Ktor Chat Room - <a href="https://github.com/DarkNDev/com.darkndev.chat-api"
-                                target="_blank">server link</a></li>
-                        <li>Ktor Notes-Api - <a href="https://github.com/DarkNDev/com.darkndev.notes-api"
-                                target="_blank">server link</a></li>
-                        <li>EverKeep using Jetpack Compose - <a href="https://github.com/DarkNDev/EverKeepCompose"
-                                target="_blank">app link</a></li>
-                        <li>Ktor Authentication - <a href="https://github.com/DarkNDev/com.darkndev.ktor-auth"
-                                target="_blank">server link</a>&ensp;<a href="https://github.com/DarkNDev/KtorAuth"
-                                target="_blank">app link</a></li>
-                        <li>Recycler view selection tracker - <a
-                                href="https://github.com/DarkNDev/SelectionTrackerUsage" target="_blank">app link</a>
-                        </li>
-                        <li>Custom Drawing - <a href="https://github.com/DarkNDev/DrawingUsage" target="_blank">app
-                                link</a></li>
-                    </ul>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">View and Data binding</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Libraries - Room, Glide, Dagger Hilt, Retrofit
+                            2, Paging 3, etc.</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Ktor Framework - Routing, Websockets and
+                            Sessions, Exposed, etc.</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Security - JWT Authentication, Hashing
+                            Passwords</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="3" class="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">Other skills and Interests - Postgresql,
+                            Photoshop, Tech Enthusiast</span>
+                    </div>
+                </div>
+                <button
+                    class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a
+                        href="assets/resume.pdf" target="_blank">Resume</a></button>
+            </div>
+    </section>
+
+    <section class="text-gray-400 bg-gray-900 body-font" id="about">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+            <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="assets/about.jpg">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-10">
+                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div> -->
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <h2 class="font-medium title-font mt-4 text-white text-lg">About Dushyant</h2>
+                            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                            <p class="text-base text-gray-400">Graduated from College of Engineering and Technology,
+                                Bhubaneswar in Electrical Engineering.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">Aspiring to be among best in the field using the skills
+                            and knowledge attained by me and thereby adding values to myself and the organisation and
+                            have zeal to work and to be part of an enthusiast work environment, where I can use my
+                            technical skills to accomplish organisational goals.</p>
+                        <a class="text-indigo-400 inline-flex items-center" href="https://github.com/DarkNDev"
+                            target="_blank">Visit Github
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <a id="skills" class="anchor"></a>
-        <section class="thirdSection">
-            <div class="sectionTitle">
-                <h1>Skills</h1>
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-            </div>
-            <div class="thirdSectionContent">
-                <div class="skill-card">
-                    <h1>Native Android Framework:</h1>
-                    <ul>
-                        <li>Programming Language - Java, Kotlin</li>
-                        <li>Architecture - MVVM (Model-View-ViewModel)</li>
-                        <li>Jetpack Compose</li>
-                        <li>Kotlin - Flows and Coroutines</li>
-                        <li>ViewModel, Lifecycle (Activities, Fragments) and Livedata</li>
-                        <li>Managers (Work, Alarm, Download), Intents, Broadcast Receivers, Content Providers</li>
-                        <li>View and Data binding</li>
-                        <li>Libraries - Room, Glide, Dagger Hilt, Retrofit 2, Ktor-client, Paging 3, Datastore</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h1>Ktor Framework:</h1>
-                    <ul>
-                        <li>Ktor server and client side</li>
-                        <li>JWT Authentication</li>
-                        <li>Hashing</li>
-                        <li>Routing and logging</li>
-                        <li>Content negotiation and serialization</li>
-                        <li>Kotlin - Coroutines and Exposed</li>
-                        <li>Websockets and Sessions</li>
-                        <li>Integration of Ktor with Android Framework</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h1>Other Skills and Interests:</h1>
-                    <ul>
-                        <li>Postgresql</li>
-                        <li>Photoshop</li>
-                        <li>Arduino, Node MCU</li>
-                        <li>Basic HTML and CSS</li>
-                        <li>Tech Enthusiast</li>
-                        <li>Watching News and Reading</li>
-                        <li>Badminton, Swimming, Cricket</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <a id="about" class="anchor"></a>
-        <section class="forthSection">
-            <div class="sectionTitle">
-                <h1>About</h1>
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-            </div>
-            <div class="forthSectionContent">
-                <div>
-                    I am Dushyant Kumar Behera graduated from College of Engineering and Technology, Bhubaneswar in
-                    Electrical Engineering and completed my schooling from Kendriya Vidyalaya No. 1, Bhubaneswar.
-                </div>
-                <div>
-                    Aspiring to be among best in the field using the skills and knowledge attained by me and thereby
-                    adding values to myself and the organisation and have zeal to work and to be part of an enthusiast
-                    work environment, where I can use my technical skills to accomplish organisational goals.
-                </div>
-            </div>
-
-            <div class="socialConnect">
-                <div class="location">
-                    <h1>Location</h1>
-                    <p>Bhubaneswar, Odisha, India</p>
-                </div>
-                <div class="social">
-                    <h1>Around the Web</h1>
-                    <a href="https://github.com/DarkNDev" target="_blank" class="social-button">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dushyantkumarbehera/" target="_blank" class="social-button">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="copyRight">
-            <p>Copyright © Dushyant, All Rights Reserved</p>
-        </section>
-
-    </main>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="js/scripts.js"></script>
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                </svg>
+                <span class="ml-3 text-xl">Portfolio</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
+                2023 Dushyant Kumar Behera —
+                <a href="https://twitter.com/BeheraDushyant" class="text-gray-500 ml-1" target="_blank"
+                    rel="noopener noreferrer">@BeheraDushyant</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <!-- <a class="text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a> -->
+                <a class="ml-3 text-gray-400" href="https://twitter.com/BeheraDushyant" target="_blank">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400" href="https://github.com/DarkNDev" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/dushyantkumarbehera/" target="_blank">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
 </body>
 
 </html>
